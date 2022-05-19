@@ -1,0 +1,21 @@
+$colores:(
+    color-nav:#212121,
+    color-main: #424242,
+    color-footer:#212121,
+    color-borde:#303F9F,
+    color-letra:#F7F9F9
+);
+
+// Clases
+.flex-columna_centrada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flex-centrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+// Clases

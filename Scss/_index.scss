@@ -1,0 +1,190 @@
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Water Brush', cursive;
+}
+body{
+    header{
+        background-color: map-get($colores, color-nav);
+        @extend .flex-centrado;
+        position: sticky;
+        top: 0px;
+        z-index: 1000;
+        border-bottom:solid 1px map-get($colores, color-letra);
+        .main-header{
+            .contenido{
+                ul{
+                    display: flex;
+                    margin: 10px;
+                    li{
+                        color: map-get($colores, color-letra);
+                        list-style: none;
+                        margin: 20px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+main{
+    background-color: map-get($colores, color-main);
+    .container{
+        .presentacion{
+            background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5) ) ,url(../Multimedia/pexels-pixabay-276452.jpg);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .flecha{
+                color: map-get($colores, color-letra);
+            }
+            img{
+                filter: brightness(0.9);
+                width: 200px;
+                border-radius: 50px;
+                margin: 20px;
+                margin-right: 10%;
+                border:2px solid map-get($colores, color-letra);
+                margin-bottom: 200px;
+            }
+            .linea{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                color: map-get($colores, color-letra);
+                font-size: 30px;
+                margin-bottom: 200px;
+                p{
+                    text-shadow:1px 1px 90px map-get($colores, color-borde);
+                    padding: 10px
+                }
+            }
+        }
+        section{
+            @extend .flex-columna_centrada;
+            h2{
+                margin-top: 50px;
+                font-size: 25px;
+                color: map-get($colores, color-letra);
+            }
+            .about-me{
+                display: flex;
+                margin-top: 100px;
+                margin-bottom: 150px;
+                .carta{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 10px;
+                    width: 50%;
+                    h3{
+                        color: map-get($colores, color-letra);
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 18px;
+                        margin-top: 40px;
+                        color: map-get($colores, color-letra);
+                    }
+                }
+                .carta2{
+                    display: flex;
+                    .html{
+                        i{
+                            font-size: 100px;
+                            margin: 10px;
+                            }
+                            i:hover{
+                                color: rgb(229, 76, 33);
+                            }
+                        }
+                        .css{
+                            i{
+                                font-size: 100px;
+                                margin: 10px;
+                            }
+                            i:hover{
+                                color: rgb(34, 119, 255);
+                            }
+                        }
+                        .sass{
+                            i{
+                                font-size: 100px;
+                                margin: 10px;
+                            }
+                            i:hover{
+                                color: rgb(206, 103, 154);
+                            }
+                        }
+                        .boostrap{
+                            i{
+                                font-size: 100px;
+                                margin: 10px;
+                            }
+                            i:hover{
+                                color: rgb(137, 10, 252);
+                            }
+                        }
+                        .git{
+                            i{
+                                font-size: 100px;
+                                margin: 10px;
+                            }
+                            i:hover{
+                                color: rgb(222, 76, 54);
+                            }
+                        }
+                    }
+                }
+            }
+            .programas{
+                width: 100%;
+                background-color: map-get($colores, color-nav);
+                h2{
+                    font-size: 25px;
+                    text-align: center;
+                    margin: 0;
+                    margin-bottom: 50px;
+                    margin-top: 50px;
+                }
+                .proyecto1{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    text-align: center;
+                    a{
+                        margin: 80px;
+                        img{
+                            border: 1px solid map-get($colores, color-letra);
+                            width: 850px;
+                            border-radius:20px;
+                        }
+                        img:hover{
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+            .contacto{
+                display: flex;
+                img{
+                    width: 60px;
+                    margin: 20px;
+                }
+            }
+            p{
+                color: map-get($colores, color-letra);
+            }
+        }
+    }
+}
+
+footer{
+    .containe-footer{
+        background-color: map-get($colores, color-footer);
+    }
+}
